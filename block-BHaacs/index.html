@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/f1a9dfe756.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Selectors Assignment</title>
+  </head>
+  <body>
+    <header>
+      <!-- Logo and Nav -->
+      <div class="container flex justify-between" id="top">
+        <a href="#top" class="brand"><h3>TrackL</h3></a>
+        <nav class="nav">
+          <ul class="nav-ul flex center">
+            <li>
+              <a href="#features">Features</a>
+            </li>
+            <li>
+              <a href="#pricing">Pricing</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#help">Help</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="input-toggle">
+        <input type="checkbox" id="toggle" />
+        <label for="toggle" class="bars"><i class="fas fa-bars"></i></label>
+      </div>
+      <!-- Hero -->
+      <div class="container hero padding text-center flex column center">
+        <h1>
+          Track the Learning<br />
+          Process Schedule
+        </h1>
+        <a class="btn">Get 30 Days Trial</a>
+        <img
+          src="./assets/hero.png"
+          alt="Woman and Computer Dashboard Digital Sketch"
+          class="width-full text-center"
+        />
+      </div>
+    </header>
+    <main>
+      <!-- Empty Div For Hero -->
+      <div class="container empty"><div class="shadow"></div></div>
+      <!-- Files -->
+      <div id="help" class="files container flex padding justify-around align-center">
+        <a href="#.pdf" target="_blank" class="pdf-file file">PDF FILE</a>
+        <a href="#.word" target="_blank" class="word-file file">WORD FILE</a>
+        <a href="#.png" target="_blank" class="image-file file">IMAGE FILE</a>
+        <a href="#.mp4" target="_blank" class="video-file file">VIDEO FILE</a>
+      </div>
+      <hr />
+      <!-- Article -->
+      <article id="about" 
+        class="article container flex padding justify-center align-center"
+      >
+        <div class="flex-40 col article-text">
+          <h2>Monitor Your Learning<br />and Improve It</h2>
+          <p>
+            Far, far away behind the word mountains, far from the countries,
+            Vokalia and Consonantia, there live the blind texts
+          </p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+          <div class="arrow-right"></div>
+          <div class="arrow-right-second"></div>
+        </div>
+        <div class="flex-40 col text-right">
+          <img
+            src="./assets/learning-graph.png"
+            alt="Learning graph"
+            class="full-width"
+          />
+        </div>
+      </article>
+      <!-- Weekly Score -->
+      <section id="features">
+        <div class="weekly-score container padding text-center">
+          <h2 class="uppercase">Weekly Score</h2>
+          <table class="text-left width-full">
+            <thead>
+              <th>Days</th>
+              <th>Course</th>
+              <th>Score (0 - 100</th>
+              <th>Hours Spent</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monday</td>
+                <td>Product Design</td>
+                <td>40</td>
+                <td>2 Hour 30 Min</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>Product Design</td>
+                <td>60</td>
+                <td>3 Hour 20 Min</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>Data Science</td>
+                <td>20</td>
+                <td>1 Hour 30 Min</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>UI Design</td>
+                <td>60</td>
+                <td>2 Hour 20 Min</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>UX Design</td>
+                <td>30</td>
+                <td>2 Hour 30 Min</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>Data Science</td>
+                <td>50</td>
+                <td>2 Hour 40 Min</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>HTML & CSS</td>
+                <td>70</td>
+                <td>3 Hour 30 Min</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- Pricing -->
+      <section id="pricing" class="padding">
+        <div class="container text-center">
+          <h2>Join Us And Let's Study<br />With Your Friends</h2>
+          <div class="pricing-toggle flex justify-center">
+            <h4>Monthly</h4>
+            <div class="div-toggle-background"></div>
+            <div class="div-toggle-inner">i</div>
+            <h4>Yearly</h4>
+          </div>
+        </div>
+        <div class="pricing container flex justify-center align-center">
+          <div class="basic flex-30 col">
+            <h2 class="text-center">Basic</h2>
+            <h5>
+              It is a long established fact that a reader will be distracted by
+              a readable
+            </h5>
+            <h1>48</h1>
+            <p>50 courses a day</p>
+            <p>4 forums a month</p>
+            <p>16 chapters a day</p>
+            <p>Private lessons once a week</p>
+            <p>Get weekly reward</p>
+            <a href="#" class="btn">Get Started</a>
+          </div>
+          <div class="most-popular flex-30 col">
+            <h2 class="text-center">Most Popular</h2>
+            <h5>
+              It is a long established fact that a reader will be distracted by
+              a readable
+            </h5>
+            <h1>58</h1>
+            <p>50 courses a day</p>
+            <p>4 forums a month</p>
+            <p>16 chapters a day</p>
+            <p>Private lessons once a week</p>
+            <p>Get weekly reward</p>
+            <a href="#" class="btn btn-primary">Get Started</a>
+          </div>
+        </div>
+      </section>
+      <!-- Start Trial -->
+      <section class="container padding start-trial">
+        <div class="free-trial text-center">
+          <h2>Start Your 30 Day Trial Now!</h2>
+          <a href="" class="btn">Get Started</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container flex justify-center padding">
+        <div class="flex-25 footer-logo col">
+          <h2><a href="#top">TrackL</a></h2>
+          <p>Far, far away, behind the word mountains, far from the.</p>
+          <div class="flex justify-start social">
+            <div>
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-50 justify-end footer-list col">
+          <ul class="flex-30">
+            <li>Features</li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Messenger</a></li>
+            <li><a href="#">Schedule</a></li>
+          </ul>
+          <ul class="flex-30">
+            <li>Support</li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Security</a></li>
+          </ul>
+          <ul class="flex-30">
+            <li>Contact</li>
+            <li>hello@trackl.io</li>
+            <li>(+00) 0000 0000</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
