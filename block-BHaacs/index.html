@@ -25,6 +25,8 @@
       <!-- Logo and Nav -->
       <div class="container flex justify-between" id="top">
         <a href="#top" class="brand"><h3>TrackL</h3></a>
+        <label for="toggle" class="bars"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="toggle" />
         <nav class="nav">
           <ul class="nav-ul flex center">
             <li>
@@ -42,10 +44,8 @@
           </ul>
         </nav>
       </div>
-      <div class="input-toggle">
-        <input type="checkbox" id="toggle" />
-        <label for="toggle" class="bars"><i class="fas fa-bars"></i></label>
-      </div>
+    </header>
+    <main>
       <!-- Hero -->
       <div class="container hero padding text-center flex column center">
         <h1>
@@ -59,12 +59,13 @@
           class="width-full text-center"
         />
       </div>
-    </header>
-    <main>
       <!-- Empty Div For Hero -->
       <div class="container empty"><div class="shadow"></div></div>
       <!-- Files -->
-      <div id="help" class="files container flex padding justify-around align-center">
+      <div
+        id="help"
+        class="files container flex padding justify-around align-center"
+      >
         <a href="#.pdf" target="_blank" class="pdf-file file">PDF FILE</a>
         <a href="#.word" target="_blank" class="word-file file">WORD FILE</a>
         <a href="#.png" target="_blank" class="image-file file">IMAGE FILE</a>
@@ -72,7 +73,8 @@
       </div>
       <hr />
       <!-- Article -->
-      <article id="about" 
+      <article
+        id="about"
         class="article container flex padding justify-center align-center"
       >
         <div class="flex-40 col article-text">
@@ -81,9 +83,11 @@
             Far, far away behind the word mountains, far from the countries,
             Vokalia and Consonantia, there live the blind texts
           </p>
-          <a href="#" class="btn btn-primary">Learn More</a>
-          <div class="arrow-right"></div>
-          <div class="arrow-right-second"></div>
+          <div class="triangles">
+            <div class="arrow-right"></div>
+            <a href="#" class="btn btn-primary">Learn More</a>
+            <div class="arrow-right-second"></div>
+          </div>
         </div>
         <div class="flex-40 col text-right">
           <img
@@ -157,8 +161,9 @@
           <h2>Join Us And Let's Study<br />With Your Friends</h2>
           <div class="pricing-toggle flex justify-center">
             <h4>Monthly</h4>
-            <div class="div-toggle-background"></div>
-            <div class="div-toggle-inner">i</div>
+            <div class="pricing-toggle div-toggle-background">
+              <div class="div-toggle-inner">i</div>
+            </div>
             <h4>Yearly</h4>
           </div>
         </div>
